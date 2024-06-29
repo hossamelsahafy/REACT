@@ -63,9 +63,49 @@
 .WebSite {
     padding-bottom: 10px;
 }
-.SummaryInfo {
+.Summary {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #333;
+}
+.experience-section {
+    margin-bottom: 20px;
+}
+.experience-section h2 {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+ul {
+    /* list-style-type: none; */
+    padding: 0;
+}
+.experience-item {
+    margin-bottom: 20px;
+}
+.experience-item li {
+    margin: 5px 0;
+}
+.project-title {
+    font-weight: bold;
+    color: #333;
+}
+.date-range, .position, .responsibilities {
+    margin-left: 20px;
+}
+.github-link {
+    color: #0056b3;
+    text-decoration: none;
+}
+.github-link:hover {
+    text-decoration: underline;
 }
