@@ -1,0 +1,71 @@
+.ProfileInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.PF {
+    width: 5%;
+    border-radius: 50%;
+}
+.Name {
+    text-align: center;
+}
+.PhoneInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.PhoneNumberImg {
+    width: 2%;
+    margin-right: 5px;
+}
+.LinkedInInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: -10px;
+    margin-right: -5px;
+}
+
+.LinkedInImg {
+    width: 2%;
+    margin-right: 11px;
+}
+
+.EmailInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: -20px;   
+}
+
+.EmailImg{
+    width: 2%;
+    padding-right: 5px;
+    margin-left: 120px; 
+}
+.WebSiteInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 15px 20px 10px 15px;
+}
+.WebSiteImg {
+    width: 2%;
+    padding-bottom: 15px;
+    margin-right: 10px;
+}
+.WebSite {
+    padding-bottom: 10px;
+}
+.SummaryInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
