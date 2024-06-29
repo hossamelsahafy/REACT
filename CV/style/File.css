@@ -10,12 +10,15 @@
 }
 .Name {
     text-align: center;
+    margin-right: 10px;
+    color: #7e056a;
 }
 .PhoneInfo {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
+    margin-right:220px;
 }
 .PhoneNumberImg {
     width: 2%;
@@ -27,20 +30,28 @@
     justify-content: center;
     text-align: left;
     margin: -10px;
-    margin-right: -5px;
+    margin-right: 215px;
 }
 
 .LinkedInImg {
     width: 2%;
     margin-right: 11px;
 }
-
+.LinkedInLink {
+    color: #551A8B;
+    text-decoration: none;
+}
+.LinkedInLink:hover {
+    text-decoration: underline;
+}
 .EmailInfo {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
-    margin: -20px;   
+    margin: -20px;
+    margin-left: 1px;
+    margin-right: 200px;
 }
 
 .EmailImg{
@@ -53,15 +64,21 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    margin: 15px 20px 10px 15px;
+    margin: 15px 240px 10px 15px;
 }
 .WebSiteImg {
     width: 2%;
     padding-bottom: 15px;
     margin-right: 10px;
 }
-.WebSite {
+
+.GithubLink {
+    color: #551A8B;
+    text-decoration: none;
     padding-bottom: 10px;
+}
+.GithubLink:hover {
+    text-decoration: underline;
 }
 .Summary {
     display: flex;
@@ -77,35 +94,61 @@ body {
 h1 {
     color: #333;
 }
-.experience-section {
+.ExperienceInfo {
     margin-bottom: 20px;
 }
-.experience-section h2 {
+.ExperienceInfo h2{
     font-size: 1.5em;
-    color: #0056b3;
+    color: #7e056a;
     margin-bottom: 10px;
 }
 ul {
-    /* list-style-type: none; */
     padding: 0;
 }
-.experience-item {
+.ExperienceItem {
     margin-bottom: 20px;
 }
-.experience-item li {
-    margin: 5px 0;
+.ExperienceItem li {
+    margin: 5px 25px;
 }
-.project-title {
+.ProjectTitle {
     font-weight: bold;
     color: #333;
 }
-.date-range, .position, .responsibilities {
+.DateRange, .Position, .Responsibilities {
     margin-left: 20px;
 }
-.github-link {
-    color: #0056b3;
-    text-decoration: none;
+
+.EducationInfo h2 {
+    font-size: 1.5em;
+    color: #7e056a;
+    margin-bottom: 10px;
 }
-.github-link:hover {
-    text-decoration: underline;
+.EducationInfo {
+    margin-bottom: 20px;
+}
+.EducationItem li {
+    margin: 5px 25px;
+}
+.Border {
+    border-bottom: 5px solid;
+}
+.PreviousEducationItems li{
+    margin: 5px 25px;
+}
+.SkillsInfo h2 {
+    font-size: 1.5em;
+    color: #7e056a;
+    margin-bottom: 10px;
+}
+.SoftSkills li {
+    margin-left: 20px;
+}
+
+.Certifications h1{
+    font-weight: bold;
+    color: #333;
+}
+.CertificationsItems li{
+    margin: 5px 25px;
 }
