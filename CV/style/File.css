@@ -139,7 +139,7 @@ ul {
     margin-bottom: 20px;
 }
 .ExperienceItem li {
-    margin: 5px 25px;
+    margin: 20px 20px;
 }
 .ProjectTitle {
     font-weight: bold;
@@ -158,14 +158,18 @@ ul {
     margin-bottom: 20px;
 }
 .EducationItem li {
-    margin: 5px 25px;
+    margin: 20px 20px;
 }
 .Border {
     border-bottom: 5px solid;
     max-width: 100%;
 }
 .PreviousEducationItems li{
-    margin: 5px 25px;
+    margin: 20px 20px 20px 20px;
+}
+.SkillsInfo h1{
+    color: #333;
+    text-align: center;
 }
 .SkillsInfo h2 {
     font-size: 1.5em;
@@ -173,13 +177,14 @@ ul {
     margin-bottom: 10px;
 }
 .SoftSkills li {
-    margin-left: 20px;
+    margin: 20px 20px 20px 20px;
 }
 
 .Certifications h1{
     font-weight: bold;
     color: #333;
+    text-align: center;
 }
 .CertificationsItems li{
-    margin: 5px 25px;
+    margin: 20px 20px;
 }
