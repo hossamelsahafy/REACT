@@ -10,13 +10,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/REACT/CV/IMG/BackGround.jpg');
-    background-size: cover;
+    background-image: url('../IMG/BackGround.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     text-align: left;
 }
-.ProfileInfo, .EmailInfo, .PhoneInfo, .LinkedInInfo, .WebSiteInfo, .SummaryInfo, .ExperienceInfo, .EducationInfo, .SkillsInfo, .Certifications {
+.ProfileInfo,
+.EmailInfo,
+.PhoneInfo,
+.LinkedInInfo,
+.WebSiteInfo,
+.SummaryInfo,
+.ExperienceInfo,
+.EducationInfo,
+.SkillsInfo,
+.Certifications {
     width: 100%;
     max-width: 600px;
     margin: 10px 0;
