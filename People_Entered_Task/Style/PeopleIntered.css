@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+body {
+    font-family: "Anton SC", sans-serif;
+    background-image: url("../Image/BackGround.jpeg");
+    background-repeat: no-repeat;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.Card {
+    background-color: rgb(244, 244, 245);
+    opacity: 0.5;
+    width: 25%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Container h1{
+    justify-content: center;
+    color: #333;
+    margin-bottom: auto;
+}
+#Count {
+    justify-content: center;
+    margin-bottom: auto;
+    font-size: 40px;
+}
+#Enter-btn,
+#Exit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+#Enter-btn {
+    background-color: #155724;
+    color: #fff;
+}
+
+#Exit-btn {
+    background-color: #721c24;
+    color: #fff;
+}
+
+#Error {
+    color: red;
+}
+#Enter-btn:hover {
+    background-color: #1e7e34;
+}
+#Exit-btn:hover {
+    background-color: #a71d2a;
+}
