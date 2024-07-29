@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    display: flex;
+    height: 50px;
+    background-color: #4e4e4e;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.Home {
+    margin: 0 10px  0 auto;
+    color: aliceblue;
+}
+
+.About,
+.Services,
+.Contact {
+    margin-right: 10px;
+    color: aliceblue;
+}
+.Center {
+    display: flex;
+    flex-direction: row;
+}
+.Left-Side  {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 50vh;
+    display: flex;
+    justify-content: left;
+    background-color: #e3e3e3;
+}
+
+.Left-Side a {
+    margin: 10px 10px ;
+}
+
+.Center-Side {
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 50vh;
+    justify-content: center;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px solid;
+    margin-left: 10px;
+}
+.Right-Side {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 50vh;
+    display: flex;
+    justify-content: right;
+    background-color: #e3e3e3;
+}
+.Boxes p {
+    box-sizing: border-box;
+    margin: 10px 10px;
+    padding: 15px 5px;
+    margin-right: 10px;
+    background-color: #4e4e4e;
+    width: 100px;
+    text-align: center;
+}
+.Footer-Left-Side {
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.Footer-Right-Side {
+    margin-right: 10px;
+    color: aliceblue
+}
