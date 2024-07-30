@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
@@ -12,14 +12,42 @@
 <body>
     <div class="container">
         <div class="centerSide">
-            <p>Lets Go</p>
+            <p>Lets Roll</p>
+        </div>
+        <button class="NewGame">Start A New Game</button>
+        <div class="rollDice">
+            <img src="./images/Rol/dice-six-faces-one.png">
         </div>
         <div class="sides">
             <div class="leftSide">
                 <p>Player1</p>
+                <div class="counter1">Score: 0</div>
+                <div class="totalScore1">
+                    <p>
+                        Total Score:
+                    </p>
+                    <div class="totalCounter1">
+                        <p>0</p>
+                    </div>
+                </div>
             </div>
+            
             <div class="rightSide">
                 <p>Player2</p>
+                <div class="counter2">Score: 0</div>
+                <div class="totalScore2">
+                    <p>
+                        Total Score:
+                    </p>
+                    <div class="totalCounter2">
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="buttons">
+                <button class="Roll">Roll A Dice</button>
+                <button class="Hold">Hold</button>
             </div>
         </div>
     </div>

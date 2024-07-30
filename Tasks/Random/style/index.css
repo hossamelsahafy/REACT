@@ -1,40 +1,83 @@
 body, html {
     margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../images/Player1.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: "Oswald", sans-serif;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 }
 
 .container {
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
 }
 
 .centerSide {
     font-size: 2em;
-    margin-bottom: 20px;
     font-style: italic;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.sides {
+
+button {
+    border-radius: 10px;
+    background-color: rgb(9, 32, 61);
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    display: block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgb(15, 45, 85);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: rgb(7, 28, 53);
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.rollDice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rollDice img {
+    width: 70px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .sides {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: relative;
 }
 
 .leftSide, .rightSide {
@@ -42,18 +85,108 @@ body, html {
     width: 45%;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
     padding: 20px;
     color: white;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: rgb(2, 44, 49);
+    font-size: 25px;
+    position: relative; 
 }
 
-.leftSide {
-    text-align: left;
-    border-radius: 0;
+p {
+    margin: 0;
 }
 
-.rightSide {
-    text-align: right;
-    border-radius: 0;
+.counter1, .counter2 {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.totalScore1, .totalScore2 {
+    position: absolute;
+    bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width:500px;
+    height: 250px;
+}
+.totalCounter1, .totalCounter2{
+    margin-top: auto;
+
+}
+.buttons {
+    position: absolute; 
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.buttons button {
+    border-radius: 10px;
+    background-color: rgb(9, 32, 61);
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgb(15, 45, 85);
+    transform: scale(1.05);
+}
+
+.buttons button:active {
+    background-color: rgb(7, 28, 53);
+    transform: scale(0.98);
+}
+
+.buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes winnerAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.winner {
+    animation: winnerAnimation 1s infinite;
 }
