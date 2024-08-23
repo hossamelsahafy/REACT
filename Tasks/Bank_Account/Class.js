@@ -82,13 +82,11 @@ class BankAccount {
     }
 }
 
-// Prototype method to sort transactions by date
 BankAccount.prototype.sortMovementsByDate = function() {
     this._movements.sort((a, b) => a.timestamp - b.timestamp);
     return this;
 };
 
-// SavingsAccount class extending BankAccount
 class SavingsAccount extends BankAccount {
     constructor(ownerName, currency, pin, interestRate, withdrawLimit) {
         super(ownerName, currency, pin, interestRate);
