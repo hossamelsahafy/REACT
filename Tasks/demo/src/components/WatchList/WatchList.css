@@ -1,0 +1,113 @@
+.movie-list-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .movie-list {
+    width: 45%;
+    background-color: #4e4659;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .watch-list {
+    width: 45%;
+    background-color: #4e4659;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+  .show {
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .movies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .card {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .card img {
+    width: 30%;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card-content h2 {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .card-content p {
+    color: white;
+  }
+  
+  .watch-btn {
+    width: 100%;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #2a1748;
+    color: white;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .watch-list h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .watch-list-movies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .watch-list-card {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .watch-list-card img {
+    width: 30%;
+  }
+  
+  .watch-list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .watch-list-content h3 {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .watch-list-content p {
+    color: white;
+  }
+  
