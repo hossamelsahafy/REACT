@@ -1,0 +1,82 @@
+footer {
+    background-color: #f5f5f5;
+    color: #110f0f;
+    padding: 40px 20px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links, .footer-info, .footer-contact, .footer-payment {
+    font-size: 0.9rem;
+}
+
+.footer-links h4, .footer-info h4, .footer-contact h4, .footer-payment h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #161515;
+}
+
+.footer-links ul, .footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-info ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-info ul li a {
+    color: #161616;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover, .footer-info ul li a:hover {
+    color: #070707;
+}
+
+.footer-contact a {
+    color: #252525;
+    text-decoration: none;
+}
+
+.footer-payment img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+.footer-bottom {
+    background-color: #ebebeb;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

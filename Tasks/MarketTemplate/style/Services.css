@@ -1,0 +1,67 @@
+.services {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 20px;
+}
+
+
+.services ul li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Hover effect on list items */
+.services ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services ul li i {
+    color: #0790B9;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.services ul li span {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .services ul {
+        grid-template-columns: 1fr;
+    }
+
+    .services ul li {
+        height: auto;
+        aspect-ratio: auto;
+        font-size: 18px;
+    }
+}

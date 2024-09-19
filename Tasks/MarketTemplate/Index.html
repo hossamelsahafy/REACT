@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link  rel="stylesheet" href="./style/Home.css"/>
+    <link  rel="stylesheet" href="./style/Services.css"/>
+    <link  rel="stylesheet" href="./style/Products.css"/>
+    <link  rel="stylesheet" href="./style/Footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="Logo">
+            <img src="./Images/main-logo.png" /></div>
+        <div class="List">
+            <ul class="InLine" id="MainList">
+                <div id="ExitIcon">X</div>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Product">Products</a></li>
+                <li><a href="#Watch">Watches</a></li>
+                <li><a href="#Sale">Sale</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li id="Margin"> <a href="#Pages">Pages</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="NestedList" id="nestedList">
+                        <li><a href=#>About</a></li>
+                        <li><a href=#>Blog</a></li>
+                        <li><a href=#>Shop</a></li>
+                        <li><a href=#>Cart</a></li>
+                        <li><a href=#>Checkout</a></li>
+                        <li><a href=#>Single Post</a></li>
+                        <li><a href=#>Contact</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#Search"><i class="fa-solid fa-magnifying-glass" id="Hide"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user" style="color: #000000;" id="Hide"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;" id="Hide"></i></a></li>
+            </ul>
+        </div>
+            <div id="Overlay"></div>
+            <div id="MenuIcon">
+                    <i class="fa-solid fa-bars"></i>
+            </div>
+    </nav>
+        <script src="./Script/NavBar.js"></script>
+
+        <!-- Home Section -->
+        <section class="home" id="Home">
+            <h1>
+                Your Products Are Great
+            </h1>
+            <i class='fas fa-angle-left' style='font-size:96px;' id="LeftArray"></i>
+            <button type="button" class="ProductButton">Shop Product</button>
+            <div class="Image">
+                <img src="./Images/banner-image.png" />
+            </div>
+            <i class='fas fa-angle-right' style='font-size:96px;' id="RightArray"></i>
+        </section>
+        <!-- Services Section -->
+        <section class="services" id="Services">
+            <ul>
+                <li><i class="fa fa-shopping-cart" style="font-size:25px"> Free delivery</i>
+                    <span>
+                        Consectetur adipi elit lorem ipsum dolor sit amet.
+                    </span>
+                </li>
+                <li><i class='fas fa-medal' style='font-size:24px'> Quality guarantee</i>
+                    <span>
+                        Dolor sit amet orem ipsu mcons ectetur adipi elit.
+                    </span>
+                </li>
+                <li><i class='fas fa-tag' style='font-size:24px'> Daily offers</i>
+
+                    <span>
+                        Amet consectetur adipi elit loreme ipsum dolor sit.
+                    </span>
+                </li>
+                <li><i class='fas fa-shield-alt' style='font-size:24px'> 100% secure payment</i>
+                    <span>
+                        Rem Lopsum dolor sit amet, consectetur adipi elit.
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <!-- Products Seection -->
+        <section class="Products" id="Product">
+            <div class="header-container">
+                <h3>Mobile Products</h3>
+                <span><a href="#Home">Go To Shop</a></span>
+            </div>
+            <div class="Cards">
+                <div class="card" id="CardOne">
+                    <img src="./Images/product-item1.jpg" alt="Iphone 10" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img id="CardImage"src="./Images/product-item2.jpg" alt="Iphone 11" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/product-item3.jpg" alt="Iphone 8" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/product-item4.jpg" alt="Iphone 13" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+                <div class="card" id="LastCard">
+                    <img src="./Images/product-item5.jpg" alt="Iphone 12" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prev" class="circle-button"></button>
+                <button id="next" class="circle-button"></button>
+            </div>
+            <script src="./Script/Products.js"></script>
+        </section>
+        <!-- Watches Section -->
+        <section class="Watches" id="Watch">
+            <div class="header-container">
+                <h3>Smart Watches</h3>
+                <span><a href="#Home">Go To Shop</a></span>
+            </div>
+            <div class="Cards">
+                <div class="card" id="WatchOne">
+                    <img src="./Images/product-item6.jpg" alt="Iphone 10" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Pink watch</p>
+                        <span class="Price">$870</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img id="CardImage"src="./Images/product-item7.jpg" alt="Iphone 11" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Spotted Watch</p>
+                        <span class="Price">$750</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/product-item8.jpg" alt="Iphone 8" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Black Watch</p>
+                        <span class="Price">$650</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/product-item9.jpg" alt="Iphone 13" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Black Watch</p>
+                        <span class="Price">$750</span>
+                    </div>
+                </div>
+                <div class="card" id="LastWatch">
+                    <img src="./Images/product-item10.jpg" alt="Iphone 12" />
+                    <button class="add-to-cart">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="FooterCard">
+                        <p>Iphone 12</p>
+                        <span class="Price">$1300</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prevWatch" class="circle-button"></button>
+                <button id="nextWatch" class="circle-button"></button>
+            </div>
+            <script src="./Script/Watches.js"></script>
+        </section>
+        <!-- Sales Sections -->
+        <section>
+
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Shop">Shop</a></li>
+                        <li><a href="#Blogs">Blogs</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Help & Info</h4>
+                    <ul>
+                        <li><a href="#Help">Help</a></li>
+                        <li><a href="#Track-order">Track Your Order</a></li>
+                        <li><a href="#Returns">Returns Policies</a></li>
+                        <li><a href="#Shipping">Shipping + Delivery</a></li>
+                        <li><a href="#Faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Do you have any queries or suggestions? <a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a></p>
+                    <p>If you need support? Just give us a call. <strong>+55 111 222 333 44</strong></p>
+                </div>
+                <div class="footer-payment">
+                    <h4>We ship with:</h4>
+                    <img src="./images/visa.png" alt="Visa" />
+                    <img src="./images/mastercard.png" alt="Mastercard" />
+                    <h4>Payment options:</h4>
+                    <img src="./images/visa.png" alt="Visa" />
+                    <img src="./images/mastercard.png" alt="Mastercard" />
+                    <img src="./images/paypal.png" alt="PayPal" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright 2024 MeowMeow. Design by <a href="#">BigCat</a> Distribution by <a href="#">CatTheme</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
